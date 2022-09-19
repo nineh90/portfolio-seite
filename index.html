@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/mobile.css">
+    <script src="./script/script.js"></script>
+
     <title>Portfolio Nils Nehring</title>
 </head>
 <body onload="init()">
     <!--HEADDER/NAVBAR-->
-    <div class="navbar d-flex justify-around aligen-center">
+    <div class="navbar d-flex justify-around aligen-center mobile-hide">
         <a class="link" href="#home">HOME</a>
         <a class="link" href="#aboutMeSection">ABOUT</a>
         <a class="link"href="#projectSection">PROJECTS</a>
@@ -20,27 +22,30 @@
     <div id="home" class="headder w-100">
         <div class="d-flex aligen-center justify-center">
             <div class="relative">
+                
                 <div id="welcomeText" class="welcomeText"></div>
-                <img class="notebook" src="./img/notebook.png" alt="">
-                <a href="#aboutMeSection"><img class="mouse-img pos1" src="./img/mouse-cursor.png" alt=""></a> 
+                <div class="image-container">  
+                    <img class="notebook w-100" src="./img/notebook_black.png" alt="">
+                </div>
             </div>    
+            <a href="#aboutMeSection"><img class="mouse-img pos1" src="./img/mouse-cursor.png" alt=""></a> 
         </div>   
     </div>
     <!--aboutme-->
-    <div id="aboutMeSection" class="d-flex aligen-center justify-center bg-wooden">
-            <div class="d-flex aligen-center mt-100">
+    <div id="aboutMeSection" class="d-flex aligen-center justify-center">
+            <div class="d-flex aligen-center mt-5 mb-5 mobile-column">
                 <img class="me-img" src="./img/me.jpeg.jpg" alt="">
                 <div>
-                    <h2>Hi, Ich bin Nils,<br>
+                    <h1>Hi, Ich bin Nils,<br>
                         Frontend-Entwickler
-                    </h2>
-                    <h2><span id="mySkills">JavaScript, HTML, CSS</span></h2>
+                    </h1>
+                    <p id="mySkills" class="font-weight-bold">JavaScript, HTML, CSS</p>
                 </div> 
             </div>
             <div>
-                <div class="d-flex">
+                <div class="d-flex mobile-column">
                     <div class="about-me-text">
-                        <h1>Überschrift 1</h1>
+                        <h2>Überschrift 1</h2>
                         <p>Lorem ipsum dolor sit amet, 
                             consectetur adipisicing elit. 
                             Id omnis at, sint aut saepe 
@@ -50,7 +55,7 @@
                             Dolorum ipsam ad voluptatum!</p>
                     </div>  
                     <div class="about-me-text">
-                        <h1>Überschrift 2</h1>
+                        <h2>Überschrift 2</h2>
                         <p>Lorem ipsum dolor sit amet, 
                             consectetur adipisicing elit. 
                             Id omnis at, sint aut saepe 
@@ -59,8 +64,8 @@
                             voluptates voluptas necessitatibus! 
                             Dolorum ipsam ad voluptatum!</p>
                     </div>  
-                    <div class="about-me-text">
-                        <h1>Überschrift 3</h1>
+                    <div class="about-me-text" >
+                        <h2>Überschrift 3</h2>
                         <p>Lorem ipsum dolor sit amet, 
                             consectetur adipisicing elit. 
                             Id omnis at, sint aut saepe 
@@ -74,30 +79,30 @@
     </div>
     <!--projects-->
     <div id="projectSection" class="d-flex aligen-center justify-center">
-        <div class="d-flex justify-center flex-wrap max-width-70 mt-100">
+        <div class="d-flex justify-center flex-wrap max-width-70 mt-5 mb-5">
             <div class="project">
-                <h1>PROJECT 1</h1>
+                <h2>PROJECT 1</h2>
                 <img src="./img/headder.png" alt="">
                 <p>
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                 </p>
             </div> 
             <div class="project">
-                <h1>PROJECT 2</h1>
+                <h2>PROJECT 2</h2>
                 <img src="./img/me.jpeg.jpg" alt="">
                 <p>
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                 </p>
             </div> 
             <div class="project">
-                <h1>PROJECT 3</h1>
+                <h2>PROJECT 3</h2>
                 <img src="./img/mouse-cursor.png" alt="">
                 <p>
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                 </p>
             </div> 
             <div class="project">
-                <h1>PROJECT 4</h1>
+                <h2>PROJECT 4</h2>
                 <img src="./img/wooden-desk.png" alt="">
                 <p>
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -112,21 +117,21 @@
             <p>
                 Anfragen Über E-Mail
             </p>
-            <form class="d-flex justify-center aligen-center column">
-                <input placeholder="E-Mail" type="email" name="" id="">
-                <input placeholder="Vorname" type="name" name="" id="">
-                <input placeholder="Nachname" type="name" name="" id="">
-                <textarea placeholder="Schreibt hier eure Nachricht. Ich antworte euch in kürze" name="" id="" cols="30" rows="10"></textarea>
-                <button onclick="alert()">Senden</button>
+            <form onsubmit="sendMail(); return false;" class="d-flex justify-center aligen-center column">
+                <input required placeholder="E-Mail" type="email" name="" id="" disabled>
+                <input required placeholder="Vorname" type="name" name="" id="" disabled>
+                <input required placeholder="Nachname" type="name" name="" id="" disabled>
+                <textarea placeholder="Schreibt hier eure Nachricht. Ich antworte euch in kürze" name="" id="" cols="30" rows="10" disabled></textarea>
+                <button onclick="sendMail();return false;">Senden</button>
             </form>
         </div>
     </div>
     <!--footer-->
 
     <div id="footer" class="w-100 padding-top-100">
-        <div class="d-flex justify-around aligen-center">
+        <div class="d-flex justify-around aligen-center column-425">
             <div class="column aligen-center">
-                <h1>Impressum</h1>
+                <h2>Impressum</h2>
                 <p>
                     Nils Nehring<br>
                     Richard-Wagner-Str. 13<br>
@@ -142,5 +147,6 @@
             </div>    
         </div>
     </div>
+
 </body>
 </html>
