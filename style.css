@@ -1,6 +1,12 @@
 body{
     margin: 0;
     background-color: rgb(19, 17, 17);
+    font-family:sans-serif ;
+    scroll-behavior: smooth;
+}
+
+.column{
+    flex-direction: column;
 }
 
 .d-flex{
@@ -15,15 +21,62 @@ body{
     align-items: center;
 }
 
+.justify-center{
+    justify-content: center;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.max-width-70{
+    max-width: 70%;
+}
 
 .w-100{
     width: 100%;
 }
 
-.headder img{
-    width: 100%;
-    height: calc(100vh - 87px);
+.mt-100{
+    margin-top: 100px;
+}
+
+.relative{
+    position: relative;
+}
+
+.bg-wooden{
+    background-image: url('./img/wooden-desk.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.padding-top-100{
+    padding-top: 100px;
+}
+
+.notebook{
+    height: calc(100vh - 80px);
     object-fit: cover;
+}
+
+.me-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    margin-right: 50px;
+}
+
+.pos1{
+    position: absolute;
+    bottom: 15px;
+}
+
+.mouse-img{
+    width: 150px;
+    cursor: pointer;
+    filter: invert(1);
 }
 
 .navbar{
@@ -32,9 +85,10 @@ body{
     right: 0;
     left: 0;
     height: 65px;
-    background-color: #b3b2c6;
     font-size: 32px;
     padding-bottom: 12px;
+    z-index: 1;
+    background-color: rgba(0,0,0,15%);
 }
 
 .link{
@@ -42,23 +96,105 @@ body{
     color: white;
     font-weight: bold;
     text-shadow: 1px 1px 1px black;
-    border-bottom: solid 5px #b3b2c6;
-    border-right: solid 5px #b3b2c6;
+    border-bottom: solid 2px #b3b2c6;
+    border-right: solid 2px #b3b2c6;
     padding: 9px;
     margin-top: 12px;
+    border-radius: 12px;
 }
 
 .link:hover{
-    border-bottom: solid 5px ;
-    border-right: solid 5px ;
-    border-radius: 12px;
-    box-shadow: 1px 1px 1px black;
+    border-bottom: solid 2px #72ff06;
+    border-right: solid 2px #72ff06;
+    /* color: #72ff06; */
+    box-shadow: 2px 2px 2px black;
 }
 
-/* ID's */
-
-#welcomeText{
+.welcomeText{
     position: absolute;
-    top: 18%;
-    left: 32%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 65%);
+    text-align: center;
+    flex-direction: column;
+}
+
+#aboutMeSection{
+    width: 100%;
+    height: 100vh;
+    color: white;
+    flex-direction: column;
+    position: relative;
+}
+
+.about-me-text{
+    width: 350px;
+    padding: 34px;
+    font-size: 24px;
+}
+
+#projectSection{
+    width: 100%;
+    min-height: 100vh;
+    color: white;
+
+}
+
+#contactSection{
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+
+#footer{
+    min-height: 250px;
+   background-color: grey; 
+}
+
+.project{
+    width: 300px;
+    height: 250px;
+    background-color: rgba(201, 39, 39, 0.285);
+    margin: 24px;
+    border-radius: 24px;
+    text-align: center;
+}
+
+.project img{
+    width: 100px;
+    height: 75px;
+}
+
+.formular{
+    width: 400px;
+    background-color: rgba(201, 39, 39, 0.285);
+    padding: 40px;
+    padding-bottom: 64px;
+    border-radius: 24px;
+
+}
+
+.formular input{
+    width: 320px;
+    height: 25px;
+    margin-top: 12px;
+    margin-bottom: 22px;
+    outline: none;
+}
+
+.formular textarea{
+    max-width: 320px;
+    min-width: 320px;
+    min-height: 50px;
+    max-height: 150px;
+}
+
+.formular button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    margin-top: 24px;
 }

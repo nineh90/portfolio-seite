@@ -6,30 +6,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
-    <title>Document</title>
+    <title>Portfolio Nils Nehring</title>
 </head>
-<body>
+<body onload="init()">
     <!--HEADDER/NAVBAR-->
-    <div class="headder w-100">
-        <div class="navbar d-flex justify-around aligen-center">
-            <a class="link" href="#">HOME</a>
-            <a class="link" href="#">ABOUT</a>
-            <a class="link"href="#">PROJECTS</a>
-            <a class="link" href="#">CONTACT</a>
-            <a class="link" href="#">IMPRESSUM</a>
-              
-        </div>
-        <div>
-            <h1 id="welcomeText">Willkommen,<br> 
-                Die Seite befindet sich<br>
-                noch im Aufbau!<br>
-                Schau später noch mal vorbei</h1>
-            <img src="./img/headder.png" alt="">
-        </div>    
+    <div class="navbar d-flex justify-around aligen-center">
+        <a class="link" href="#home">HOME</a>
+        <a class="link" href="#aboutMeSection">ABOUT</a>
+        <a class="link"href="#projectSection">PROJECTS</a>
+        <a class="link" href="#contactSection">CONTACT</a>
+        <a class="link" href="#footer">IMPRESSUM</a>
+    </div>
+    <div id="home" class="headder w-100">
+        <div class="d-flex aligen-center justify-center">
+            <div class="relative">
+                <div id="welcomeText" class="welcomeText"></div>
+                <img class="notebook" src="./img/notebook.png" alt="">
+                <a href="#aboutMeSection"><img class="mouse-img pos1" src="./img/mouse-cursor.png" alt=""></a> 
+            </div>    
+        </div>   
     </div>
     <!--aboutme-->
+    <div id="aboutMeSection" class="d-flex aligen-center justify-center bg-wooden">
+            <div class="d-flex aligen-center mt-100">
+                <img class="me-img" src="./img/me.jpeg.jpg" alt="">
+                <div>
+                    <h2>Hi, Ich bin Nils,<br>
+                        Frontend-Entwickler
+                    </h2>
+                    <h2><span id="mySkills">JavaScript, HTML, CSS</span></h2>
+                </div> 
+            </div>
+            <div>
+                <div class="d-flex">
+                    <div class="about-me-text">
+                        <h1>Überschrift 1</h1>
+                        <p>Lorem ipsum dolor sit amet, 
+                            consectetur adipisicing elit. 
+                            Id omnis at, sint aut saepe 
+                            repellendus ad labore laudantium 
+                            iure veritatis, nobis esse cum
+                            voluptates voluptas necessitatibus! 
+                            Dolorum ipsam ad voluptatum!</p>
+                    </div>  
+                    <div class="about-me-text">
+                        <h1>Überschrift 2</h1>
+                        <p>Lorem ipsum dolor sit amet, 
+                            consectetur adipisicing elit. 
+                            Id omnis at, sint aut saepe 
+                            repellendus ad labore laudantium 
+                            iure veritatis, nobis esse cum
+                            voluptates voluptas necessitatibus! 
+                            Dolorum ipsam ad voluptatum!</p>
+                    </div>  
+                    <div class="about-me-text">
+                        <h1>Überschrift 3</h1>
+                        <p>Lorem ipsum dolor sit amet, 
+                            consectetur adipisicing elit. 
+                            Id omnis at, sint aut saepe 
+                            repellendus ad labore laudantium 
+                            iure veritatis, nobis esse cum
+                            voluptates voluptas necessitatibus! 
+                            Dolorum ipsam ad voluptatum!</p>
+                    </div>
+                </div>      
+            </div>
+    </div>
     <!--projects-->
+    <div id="projectSection" class="d-flex aligen-center justify-center">
+        <div class="d-flex justify-center flex-wrap max-width-70 mt-100">
+            <div class="project">
+                <h1>PROJECT 1</h1>
+                <img src="./img/headder.png" alt="">
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                </p>
+            </div> 
+            <div class="project">
+                <h1>PROJECT 2</h1>
+                <img src="./img/me.jpeg.jpg" alt="">
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                </p>
+            </div> 
+            <div class="project">
+                <h1>PROJECT 3</h1>
+                <img src="./img/mouse-cursor.png" alt="">
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                </p>
+            </div> 
+            <div class="project">
+                <h1>PROJECT 4</h1>
+                <img src="./img/wooden-desk.png" alt="">
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                </p>
+            </div>
+        </div>    
+    </div>
     <!--contact-->
+    <div id="contactSection"  class="d-flex aligen-center justify-center">
+        <div class="formular d-flex aligen-center justify-center column">
+            <h2>Contact</h2>
+            <p>
+                Anfragen Über E-Mail
+            </p>
+            <form class="d-flex justify-center aligen-center column">
+                <input placeholder="E-Mail" type="email" name="" id="">
+                <input placeholder="Vorname" type="name" name="" id="">
+                <input placeholder="Nachname" type="name" name="" id="">
+                <textarea placeholder="Schreibt hier eure Nachricht. Ich antworte euch in kürze" name="" id="" cols="30" rows="10"></textarea>
+                <button onclick="alert()">Senden</button>
+            </form>
+        </div>
+    </div>
     <!--footer-->
+
+    <div id="footer" class="w-100 padding-top-100">
+        <div class="d-flex justify-around aligen-center">
+            <div class="column aligen-center">
+                <h1>Impressum</h1>
+                <p>
+                    Nils Nehring<br>
+                    Richard-Wagner-Str. 13<br>
+                    49525 Lengerich
+                </p>
+            </div>   
+            <div class="column">
+                <h2>Kontakt</h2>
+                <p>
+                    Telefon: +49******** <br>
+                    E-Mail: ****@****.de
+                </p>
+            </div>    
+        </div>
+    </div>
 </body>
 </html>
