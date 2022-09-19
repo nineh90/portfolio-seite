@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    background-color: rgb(19, 17, 17);
+}
+
+.d-flex{
+    display: flex;
+}
+
+.justify-around{
+    justify-content: space-around;
+}
+
+.aligen-center{
+    align-items: center;
+}
+
+
+.w-100{
+    width: 100%;
+}
+
+.headder img{
+    width: 100%;
+    height: calc(100vh - 87px);
+    object-fit: cover;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 65px;
+    background-color: #b3b2c6;
+    font-size: 32px;
+    padding-bottom: 12px;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: solid 5px #b3b2c6;
+    border-right: solid 5px #b3b2c6;
+    padding: 9px;
+    margin-top: 12px;
+}
+
+.link:hover{
+    border-bottom: solid 5px ;
+    border-right: solid 5px ;
+    border-radius: 12px;
+    box-shadow: 1px 1px 1px black;
+}
+
+/* ID's */
+
+#welcomeText{
+    position: absolute;
+    top: 18%;
+    left: 32%;
+}
