@@ -1,3 +1,15 @@
+@media(max-width: 1440px){
+    h2{
+        font-size: 28px;
+    }
+    .project{
+        width: 250px;
+    }
+    p{
+        font-size: 18px;
+    }
+}
+
 @media(max-width: 1024px){
     h1{
         font-size: 38px;
@@ -15,6 +27,10 @@
    /* .mb-5{
         margin-bottom: 0rem;
    } */
+   .bg-wooden{
+    background-repeat: repeat;
+    background-position: bottom;
+   }
    .about-me-text{
         width: 270px;
         padding: 34px;
@@ -53,7 +69,7 @@
         height: calc(100vh - 40%);
     }
     .pos1 {
-        bottom: 45px;
+        bottom: 122px;
         right: 160px;
     }
     .mouse-img {
@@ -71,5 +87,58 @@
     }
     p {
         font-size: 1em;
-    }        
+    }   
+    .mobile-display{
+        display: flex;
+    } 
+    .screen-wrapper h2 {
+        font-size: 1em;
+    }
+    .screen-wrapper h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media(max-width: 375px){
+    .link{
+        width: 90%;
+    }
+    .responsive-menu{
+        width: 95.65%;
+    }
+    .notebook {
+        height: calc(100vh - 26px);
+    }
+    .pos1 {
+        bottom: 149px;
+        right: 140px;
+    }    
+    .welcomeText {
+        height: calc(100vh - 32%);
+    }
+}
+
+@media(max-width: 320px){
+    .responsive-menu {
+        width: 87.65%;
+    }
+    .notebook {
+        height: calc(100vh + 56px);
+    }
+    .screen-wrapper h2 {
+        font-size: 0.75em;
+    }
+    .welcomeText {
+        height: calc(100vh - 18%);
+    }
+    .pos1 {
+        bottom: 112px;
+        right: 112px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .about-me-text {
+        width: 260px;
+    }
 }

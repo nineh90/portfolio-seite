@@ -27,6 +27,10 @@ html{
     display: flex;
 }
 
+.d-none{
+    display: none;
+}
+
 .justify-around{
     justify-content: space-around;
 }
@@ -124,6 +128,25 @@ p {
     background-color: rgba(0,0,0,50%);
 }
 
+.menu-img{
+    width: 45px;
+    height: 45px;
+    filter: invert(1);
+    margin-top: 0.5rem;
+}
+
+.responsive-menu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    z-index: 111;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: rgb(49 40 38);
+}    
+
 .link{
     text-decoration: none;
     color: white;
@@ -131,10 +154,19 @@ p {
     text-shadow: 1px 1px 1px black;
     border-bottom: solid 2px #b3b2c6;
     border-right: solid 2px #b3b2c6;
-    padding: 9px;
     margin-top: 12px;
     border-radius: 12px;
 }
+
+.arrow{
+    width: 45px;
+    filter: invert(1);
+    border-bottom: solid 2px #b3b2c6;
+    border-right: solid 2px #b3b2c6;
+    padding: 9px;
+    margin-top: 12px;
+    border-radius: 12px;
+}    
 
 .link:hover{
     border-bottom: solid 2px #c9272749;

@@ -10,3 +10,17 @@ function sendMail(){
     console.log('Email');
 }
 
+function openResponsiveMenu(){
+    mobileNavbar.classList.remove('d-none');
+    // ifMobileNavbarIsOpen();
+}
+
+// function ifMobileNavbarIsOpen(){
+//     if(mobileNavbar){
+//         mobileNavbar.classList.add('d-none')
+//     }
+// }
+
+function closeMenuandGoToLink(){
+    mobileNavbar.classList.add('d-none');
+}

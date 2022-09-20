@@ -12,13 +12,30 @@
 </head>
 <body onload="init()">
     <!--HEADDER/NAVBAR-->
-    <div class="navbar d-flex justify-around aligen-center mobile-hide">
-        <a class="link" href="#home">HOME</a>
-        <a class="link" href="#aboutMeSection">ABOUT</a>
-        <a class="link"href="#projectSection">PROJECTS</a>
-        <a class="link" href="#contactSection">CONTACT</a>
-        <a class="link" href="#footer">IMPRESSUM</a>
+    <div class="navbar d-flex justify-around aligen-center">
+        <a class="link mobile-hide" href="#home">HOME</a>
+        <a class="link mobile-hide" href="#aboutMeSection">ABOUT</a>
+        <a class="link mobile-hide"href="#projectSection">PROJECTS</a>
+        <a class="link mobile-hide" href="#contactSection">CONTACT</a>
+        <a class="link mobile-hide" href="#footer">IMPRESSUM</a>
+        <img class="menu-img d-none mobile-display" onclick="openResponsiveMenu()" src="./img/menu.png" alt="">
     </div>
+
+    <!--Responsive Menu-->
+
+    <div id="mobileNavbar" class="d-none">
+        <nav class="d-flex column responsive-menu">
+            <a class="link" onclick="closeMenuandGoToLink()" href="#home">HOME</a>
+            <a class="link" onclick="closeMenuandGoToLink()" href="#aboutMeSection">ABOUT</a>
+            <a class="link" onclick="closeMenuandGoToLink()" href="#projectSection">PROJECTS</a>
+            <a class="link" onclick="closeMenuandGoToLink()" href="#contactSection">CONTACT</a>
+            <a class="link" onclick="closeMenuandGoToLink()" href="#footer">IMPRESSUM</a>
+            <div> 
+                <img onclick="closeMenuandGoToLink()" class="arrow" src="./img/arrowup.png" alt="">
+            </div>    
+        </nav>
+    </div>
+
     <div id="home" class="headder w-100">
         <div class="d-flex aligen-center justify-center">
             <div class="relative">
@@ -32,7 +49,7 @@
         </div>   
     </div>
     <!--aboutme-->
-    <div id="aboutMeSection" class="d-flex aligen-center justify-center">
+    <div id="aboutMeSection" class="d-flex aligen-center justify-center bg-wooden">
             <div class="d-flex aligen-center mt-5 mb-5 mobile-column">
                 <img class="me-img" src="./img/me.jpeg.jpg" alt="">
                 <div>
@@ -111,7 +128,7 @@
         </div>    
     </div>
     <!--contact-->
-    <div id="contactSection"  class="d-flex aligen-center justify-center">
+    <div id="contactSection"  class="d-flex aligen-center justify-center bg-wooden">
         <div class="formular d-flex aligen-center justify-center column">
             <h2>Contact</h2>
             <p>
