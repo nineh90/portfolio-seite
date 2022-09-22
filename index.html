@@ -40,7 +40,10 @@
         <div class="d-flex aligen-center justify-center">
             <div class="relative">
                 
-                <div id="welcomeText" class="welcomeText"></div>
+                <div id="welcomeText" class="welcomeText screen-wrapper">
+                      
+                      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>  
+                </div>
                 <div class="image-container">  
                     <img class="notebook w-100" src="./img/notebook_black.png" alt="">
                 </div>
@@ -134,12 +137,12 @@
             <p>
                 Anfragen Über E-Mail
             </p>
-            <form action="mail.php" method="post" class="d-flex justify-center aligen-center column">
+            <form onsubmit="sendMail(); return false" method="post" class="d-flex justify-center aligen-center column">
                 <input required placeholder="E-Mail" type="email" name="mail">
                 <input required placeholder="Vorname" type="name" name="firstname">
                 <input required placeholder="Nachname" type="name" name="lastname">
                 <textarea required placeholder="Schreibt hier eure Nachricht. Ich antworte euch in kürze" name="" id="" cols="30" rows="10"></textarea>
-                <button type action="mail.php">Senden</button>
+                <button type="submit" action="">Senden</button>
             </form>
         </div>
     </div>
@@ -154,7 +157,7 @@
                     Richard-Wagner-Str. 13<br>
                     49525 Lengerich
                 </p>
-            </div>   
+            </div>
             <div class="column">
                 <h2>Kontakt</h2>
                 <p>
