@@ -156,6 +156,13 @@ p {
     border-right: solid 2px #b3b2c6;
     margin-top: 12px;
     border-radius: 12px;
+    padding: 6px;
+}
+.link:hover{
+    border-bottom: solid 2px limegreen;
+    border-right: solid 2px limegreen;
+    color: limegreen;
+    box-shadow: 2px 2px 2px black;
 }
 
 .arrow{
@@ -168,12 +175,6 @@ p {
     border-radius: 12px;
 }    
 
-.link:hover{
-    border-bottom: solid 2px #c9272749;
-    border-right: solid 2px #c9272749;
-    /* color: #72ff06; */
-    box-shadow: 2px 2px 2px black;
-}
 
 .welcomeText{
     position: absolute;

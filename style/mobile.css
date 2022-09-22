@@ -139,6 +139,16 @@
         font-size: 20px;
     }
     .about-me-text {
-        width: 260px;
+        width: 250px;
+    }
+    .formular {
+        width: 150px;
+    }
+    .formular input {
+        width: 160px;
+    }
+    .formular textarea {
+        max-width: 160px;
+        min-width: 160px;
     }
 }

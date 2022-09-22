@@ -36,7 +36,7 @@
         </nav>
     </div>
 
-    <div id="home" class="headder w-100">
+    <div id="home" class="headder w-100 bg-wooden" >
         <div class="d-flex aligen-center justify-center">
             <div class="relative">
                 
@@ -49,7 +49,7 @@
         </div>   
     </div>
     <!--aboutme-->
-    <div id="aboutMeSection" class="d-flex aligen-center justify-center bg-wooden">
+    <div id="aboutMeSection" class="d-flex aligen-center justify-center">
             <div class="d-flex aligen-center mt-5 mb-5 mobile-column">
                 <img class="me-img" src="./img/me.jpeg.jpg" alt="">
                 <div>
@@ -134,12 +134,12 @@
             <p>
                 Anfragen Über E-Mail
             </p>
-            <form onsubmit="sendMail(); return false;" class="d-flex justify-center aligen-center column">
-                <input required placeholder="E-Mail" type="email" name="" id="" disabled>
-                <input required placeholder="Vorname" type="name" name="" id="" disabled>
-                <input required placeholder="Nachname" type="name" name="" id="" disabled>
-                <textarea placeholder="Schreibt hier eure Nachricht. Ich antworte euch in kürze" name="" id="" cols="30" rows="10" disabled></textarea>
-                <button onclick="sendMail();return false;">Senden</button>
+            <form action="mail.php" method="post" class="d-flex justify-center aligen-center column">
+                <input required placeholder="E-Mail" type="email" name="mail">
+                <input required placeholder="Vorname" type="name" name="firstname">
+                <input required placeholder="Nachname" type="name" name="lastname">
+                <textarea required placeholder="Schreibt hier eure Nachricht. Ich antworte euch in kürze" name="" id="" cols="30" rows="10"></textarea>
+                <button type action="mail.php">Senden</button>
             </form>
         </div>
     </div>

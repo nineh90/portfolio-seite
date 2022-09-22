@@ -12,14 +12,14 @@ function sendMail(){
 
 function openResponsiveMenu(){
     mobileNavbar.classList.remove('d-none');
-    // ifMobileNavbarIsOpen();
+    ifMobileNavbarIsOpen();
 }
 
-// function ifMobileNavbarIsOpen(){
-//     if(mobileNavbar){
-//         mobileNavbar.classList.add('d-none')
-//     }
-// }
+function ifMobileNavbarIsOpen(){
+    if(mobileNavbar){
+       console.log("mobile navbar is open");
+    }
+}
 
 function closeMenuandGoToLink(){
     mobileNavbar.classList.add('d-none');
