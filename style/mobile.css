@@ -32,6 +32,9 @@
         width: 270px;
         padding: 34px;
    }
+   .screen-wrapper h1 {
+        font-size: 20px;
+    }
 }
 
 @media(max-width: 768px){
@@ -42,6 +45,9 @@
     .pos1{
         bottom: 44px;
         right: 80px;
+    }
+    .screen-wrapper h1 {
+        font-size: 1.2em;
     }
     .mobile-column{
         flex-direction: column;
@@ -66,7 +72,7 @@
         height: calc(100vh - 40%);
     }
     .pos1 {
-        bottom: 122px;
+        bottom: 85px;
         right: 160px;
     }
     .mouse-img {
@@ -92,7 +98,11 @@
         font-size: 1em;
     }
     .screen-wrapper h1 {
-        font-size: 1.5em;
+        font-size: 1em;
+    }
+    .ml11 {
+        font-weight: 700;
+        font-size: 1.75em;
     }
 }
 

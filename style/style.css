@@ -135,6 +135,10 @@ p {
     margin-top: 0.5rem;
 }
 
+.rotateZ90DEG{
+    transform: rotateZ(90deg);
+}
+
 .responsive-menu{
     display: flex;
     flex-direction: column;
@@ -165,6 +169,10 @@ p {
     box-shadow: 2px 2px 2px black;
 }
 
+.translateY{
+    transform: translateY(15px);
+}
+
 .arrow{
     width: 45px;
     filter: invert(1);
@@ -185,6 +193,7 @@ p {
     height: calc(100vh - 59%);
     text-align: center;
     flex-direction: column;
+    overflow: hidden;
 }
 
 #aboutMeSection{
@@ -272,8 +281,8 @@ p {
 }
 
 .screen-wrapper {    
-    padding-left: 4rem;
-    padding-right: 4rem;
+    /* padding-left: 4rem;
+    padding-right: 4rem; */
     color: limegreen;
     text-align: left; 
 }
@@ -318,3 +327,17 @@ p {
     display: inline-block;
     line-height: 1em;
   }
+
+  .ml15 {
+    font-weight: 800;
+    font-size: 3.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+  }
+  
+  .ml15 .word {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+  

@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/mobile.css">
     <script src="./script/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
 
     <title>Portfolio Nils Nehring</title>
 </head>
@@ -18,7 +20,7 @@
         <a class="link mobile-hide"href="#projectSection">PROJECTS</a>
         <a class="link mobile-hide" href="#contactSection">CONTACT</a>
         <a class="link mobile-hide" href="#footer">IMPRESSUM</a>
-        <img class="menu-img d-none mobile-display" onclick="openResponsiveMenu()" src="./img/menu.png" alt="">
+        <img id="menuBtnMobile" class="menu-img d-none mobile-display rotateZ90DEG" onclick="openResponsiveMenu()" src="./img/menu.png" alt="">
     </div>
 
     <!--Responsive Menu-->
@@ -48,7 +50,7 @@
                     <img class="notebook w-100" src="./img/notebook_black.png" alt="">
                 </div>
             </div>    
-            <a href="#aboutMeSection"><img class="mouse-img pos1" src="./img/mouse-cursor.png" alt=""></a> 
+            <a href="#aboutMeSection"><img id="mouse" class="mouse-img pos1" src="./img/mouse-cursor.png" alt=""></a> 
         </div>   
     </div>
     <!--aboutme-->
