@@ -8,12 +8,10 @@ function init(){
 
 function moveMouseDown(){
     mouse.classList.add("translateY");
-    console.log('Maus Bewegung Runter');
     setTimeout(moveMouseUp, 500);
 }
 
 function moveMouseUp(){
-    console.log('Maus Bewegung hoch');
     mouse.classList.remove('translateY');
 }
 
