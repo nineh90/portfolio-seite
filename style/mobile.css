@@ -2,6 +2,9 @@
     h2{
         font-size: 28px;
     }
+    .screen-wrapper h1 {
+        font-size: 1.5em;
+    }
     .project{
         width: 250px;
     }

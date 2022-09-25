@@ -53,22 +53,21 @@ function cssWelcomeText(){
 
 function setStartText(){
     welcomeText.innerHTML = `<div class="ml11">
-    <span class="text-wrapper">
-      <span class="line line1"></span>
-      <span class="letters">Willkommen</span>
-    </span>
-    </div>`
+                                <span class="text-wrapper">
+                                <span class="line line1"></span>
+                                <span class="letters">Willkommen</span>
+                                </span>
+                            </div>`
 }
 
 function showProgrammerName(){
     welcomeText.innerHTML += `<span>auf der Portfolio-Seite von</span>`;
     welcomeText.innerHTML += `<h3>Nils Nehring</h3>`;
-    welcomeText.innerHTML += `  
-                                <h1 class="ml15">
-                                    <span class="word">HTML</span>
-                                    <span class="word">CSS</span>
-                                    <span class="word">JavaScript</span>
-                                </h1>
+    welcomeText.innerHTML += `<h1 class="ml15">
+                                <span class="word">HTML</span>
+                                <span class="word">CSS</span>
+                                <span class="word">JavaScript</span>
+                            </h1>
                                 `;
         anime.timeline({loop: false})
                                 .add({
@@ -88,6 +87,17 @@ function showProgrammerName(){
 }
 
 function sendMail(){
+    mailInput.value = '';
+    mailInput.disabled = true;
+    firstNameInput.value = '';
+    firstNameInput.disabled = true;
+    lastNameInput.value = '';
+    lastNameInput.disabled = true;
+    textArea.value = ''; 
+    textArea.placeholder = 'Vielen Dank für deine Anfrage. Ich Antworte dir in kürze.';
+    textArea.disabled = true;
+    submitBTN.disabled = true;
+    contactFormular.innerHTML = `Deine Anfrage wurde gesendet. Aus Sicherheitsgründen ist das Kontakt Formular bis zu deinem nächsten Besuch gesperrt`;
     console.log('Email');
 }
 

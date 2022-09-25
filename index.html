@@ -42,9 +42,8 @@
         <div class="d-flex aligen-center justify-center">
             <div class="relative">
                 
-                <div id="welcomeText" class="welcomeText screen-wrapper">
-                      
-                      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>  
+                <div id="welcomeText" class="welcomeText screen-wrapper">  
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>  
                 </div>
                 <div class="image-container">  
                     <img class="notebook w-100" src="./img/notebook_black.png" alt="">
@@ -67,14 +66,12 @@
             <div>
                 <div class="d-flex mobile-column">
                     <div class="about-me-text">
-                        <h2>Überschrift 1</h2>
-                        <p>Lorem ipsum dolor sit amet, 
-                            consectetur adipisicing elit. 
-                            Id omnis at, sint aut saepe 
-                            repellendus ad labore laudantium 
-                            iure veritatis, nobis esse cum
-                            voluptates voluptas necessitatibus! 
-                            Dolorum ipsam ad voluptatum!</p>
+                        <h2>Über Mich</h2>
+                        <p>
+                            Hi. Ich bin Nils, 32 Jahre alt
+                            und auf dem Weg zum Frontend-Entwickler.
+                            Bis her war ich als Kraftfahrer und Produktionsleiter tätig. 
+                        </p>
                     </div>  
                     <div class="about-me-text">
                         <h2>Überschrift 2</h2>
@@ -141,15 +138,15 @@
     <div id="contactSection"  class="d-flex aligen-center justify-center bg-wooden">
         <div class="formular d-flex aligen-center justify-center column">
             <h2>Contact</h2>
-            <p>
+            <p id="contactFormular">
                 Anfragen Über E-Mail
             </p>
-            <form onsubmit="sendMail(); return false" method="post" class="d-flex justify-center aligen-center column">
-                <input required placeholder="E-Mail" type="email" name="mail">
-                <input required placeholder="Vorname" type="name" name="firstname">
-                <input required placeholder="Nachname" type="name" name="lastname">
-                <textarea required placeholder="Schreibt hier eure Nachricht. Ich antworte euch in kürze" name="" id="" cols="30" rows="10"></textarea>
-                <button type="submit" action="">Senden</button>
+            <form onsubmit="sendMail();return false" class="d-flex justify-center aligen-center column"> <!--method="post"-->
+                <input id="mailInput" required placeholder="E-Mail" type="email" name="mail">
+                <input id="firstNameInput" required placeholder="Vorname" type="name" name="firstname">
+                <input id="lastNameInput" required placeholder="Nachname" type="name" name="lastname">
+                <textarea id="textArea" required placeholder="Schreibt hier eure Nachricht. Ich antworte euch in kürze" name="" cols="30" rows="10"></textarea>
+                <button id="submitBTN" onclick="sendMail()" type="submit" action="">Senden</button>
             </form>
         </div>
     </div>
